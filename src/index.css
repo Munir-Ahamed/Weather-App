@@ -9,11 +9,37 @@ body {
 
 main {
   height: 100vh;
+  background-image: url('warm-bg.jpg');
+  background-size: cover;
+  transition: 0.4 ease;
 }
 
 .search_box {
-  
+  display: flex;
+  justify-content: center;  
+}
+
+.search_input {
+  width: 400px;
+  height: 2.5rem;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 0 0 15px 15px;
+  box-sizing: border-box;
 }
 
 .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content > div {
+  width: 100%;
+  text-align: center;
+}
+
+.coldbg {
+  background-image: url('cold-bg.jpg');
+  background-size: cover;
+  transition: 0.4 ease;
 }
